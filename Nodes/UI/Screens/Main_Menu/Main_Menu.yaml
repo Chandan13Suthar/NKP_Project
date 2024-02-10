@@ -1573,7 +1573,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: NodeId
                 Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode"
+                Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode1"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId

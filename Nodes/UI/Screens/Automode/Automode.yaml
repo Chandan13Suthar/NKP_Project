@@ -1,8 +1,8 @@
 Name: Automode
 Type: FolderType
 Children:
-- Name: Auto_mode
-  Id: g=75f56ed33f53918b9c108bcc4f608c84
+- Name: Auto_mode1
+  Id: g=5e444ae0db02723bef83a4d03f5f1978
   Supertype: Screen
   ReferenceType: HasComponent
   Children:
@@ -87,7 +87,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode_select_s1"
+              Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode_select_s2"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -210,7 +210,7 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode_select_s2"
+              Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode_select_s1"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -263,244 +263,7 @@ Children:
       ModellingRule: Optional
       Value: 700
 - Name: Auto_mode_select_s1
-  Id: g=169af711b4ef9e6960d497f3ba1cf07c
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 800.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 400.0
-  - Name: NavigationPanel1
-    Type: NavigationPanel
-    Children:
-    - Name: Panels
-      Type: BaseObjectType
-      Children:
-      - Name: Panel1
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode_s1_1"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel2
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode_s1_2"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-      - Name: Panel3
-        Type: NavigationPanelItem
-        Children:
-        - Name: Title
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Panel
-          Type: NodePointer
-          DataType: NodeId
-          Value: "/Objects/NKP_Project/UI/Screens/Automode/Rejction_System_s1"
-          Children:
-          - Name: Kind
-            Type: PropertyType
-            DataType: NodeId
-            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
-    - Name: CurrentPanel
-      Type: NodePointer
-      DataType: NodeId
-      AccessLevel: Read
-      Value: {"IdType":0,"Id":0,"Namespace":-1}
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
-    - Name: CurrentTabIndex
-      Type: BaseDataVariableType
-      DataType: Int32
-      Value: 0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 300.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 300.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Class: Reference
-      Target: ns=5;i=1183
-      Direction: Forward
-    - Class: Reference
-      Target: ns=5;i=1181
-      Direction: Forward
-  - Name: HorizontalAlignment
-    Type: BaseVariableType
-    DataType: HorizontalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: VerticalAlignment
-    Type: BaseVariableType
-    DataType: VerticalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: TopMargin
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 50.0
-  - Name: Back
-    Type: Button
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Back"}
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 740.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 60.0
-    - Name: MouseClickEventHandler1
-      Type: EventHandler
-      Children:
-      - Name: ListenEventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-      - Name: MethodsToCall
-        Type: BaseObjectType
-        Children:
-        - Name: MethodContainer1
-          Type: BaseObjectType
-          Children:
-          - Name: ns=3;ObjectPointer
-            Type: NodePointer
-            DataType: NodeId
-            Value: {"IdType":0,"Id":0,"Namespace":-1}
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType"
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "{Screen_loader}@NodeId"
-              Children:
-              - Name: Mode
-                Type: BaseVariableType
-                DataType: DynamicLinkMode
-                ModellingRule: Optional
-                Value: 2
-          - Name: ns=3;Method
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "ChangePanel"
-          - Name: InputArguments
-            Type: BaseObjectType
-            Children:
-            - Name: NewPanel
-              Type: BaseDataVariableType
-              DataType: NodeId
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode"
-            - Name: AliasNode
-              Type: BaseDataVariableType
-              DataType: NodeId
-              Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
-              ValueRank: ScalarOrOneDimension
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-      - Name: EventArguments
-        Type: MouseClickEvent
-        Children:
-        - Name: EventId
-          Type: PropertyType
-          DataType: ByteString
-          Value: ""
-        - Name: EventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: SourceNode
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: SourceName
-          Type: PropertyType
-          DataType: String
-          Value: ""
-        - Name: Time
-          Type: PropertyType
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: ReceiveTime
-          Type: PropertyType
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Message
-          Type: PropertyType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Severity
-          Type: PropertyType
-          DataType: UInt16
-          Value: 0
-- Name: Auto_mode_select_s2
-  Id: g=02498a41198403ced2d9f7fea600c4d8
+  Id: g=d30e2b2f74cb2b1fe0854e0b6eb9fc97
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -694,7 +457,244 @@ Children:
               Type: BaseDataVariableType
               DataType: NodeId
               Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-              Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode"
+              Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode1"
+            - Name: AliasNode
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+- Name: Auto_mode_select_s2
+  Id: g=33f290ab8d694f7c9de65d84efd10d81
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 800.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: NavigationPanel1
+    Type: NavigationPanel
+    Children:
+    - Name: Panels
+      Type: BaseObjectType
+      Children:
+      - Name: Panel1
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode_s1_1"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel2
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode_s1_2"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+      - Name: Panel3
+        Type: NavigationPanelItem
+        Children:
+        - Name: Title
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Panel
+          Type: NodePointer
+          DataType: NodeId
+          Value: "/Objects/NKP_Project/UI/Screens/Automode/Rejction_System_s1"
+          Children:
+          - Name: Kind
+            Type: PropertyType
+            DataType: NodeId
+            Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+    - Name: CurrentPanel
+      Type: NodePointer
+      DataType: NodeId
+      AccessLevel: Read
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+    - Name: CurrentTabIndex
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Class: Reference
+      Target: ns=5;i=1183
+      Direction: Forward
+    - Class: Reference
+      Target: ns=5;i=1181
+      Direction: Forward
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: TopMargin
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 50.0
+  - Name: Back
+    Type: Button
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Back"}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 740.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 60.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Screen_loader}@NodeId"
+              Children:
+              - Name: Mode
+                Type: BaseVariableType
+                DataType: DynamicLinkMode
+                ModellingRule: Optional
+                Value: 2
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "ChangePanel"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: NewPanel
+              Type: BaseDataVariableType
+              DataType: NodeId
+              Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+              Value: "/Objects/NKP_Project/UI/Screens/Automode/Auto_mode1"
             - Name: AliasNode
               Type: BaseDataVariableType
               DataType: NodeId
@@ -737,7 +737,7 @@ Children:
           DataType: UInt16
           Value: 0
 - Name: Auto_mode_s1_1
-  Id: g=f99c8a69ca3d7d420e9969246dc62ae0
+  Id: g=2579c55076129a8f854c2ecab83d43b2
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -1111,8 +1111,63 @@ Children:
     - Name: Color
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Start_Stop_Indication"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_OptixPanel/Model/Auto_Mode/Station_1/Start_Stop_Indication"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
   - Name: Total_count_lab
     Type: Label
     Children:
@@ -1343,7 +1398,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Total_Count"
+        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Vial_Minute"
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -1404,8 +1459,1267 @@ Children:
       DataType: Font
       ModellingRule: Optional
       Value: ""
+- Name: Auto_mode_s1_2
+  Id: g=c6a97ad4923610256195c6ccf62251bb
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 800.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: Rectangle1
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 800.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 400.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#100782"
+  - Name: Rectangle2
+    Type: Rectangle
+    Children:
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 1.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 250.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 39.0
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#00000000"
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+  - Name: Manual_Mode_S1
+    Type: Label
+    Children:
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 16.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 239.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      ModellingRule: Optional
+      Value: {"LocaleId":"en-US","Text":"Auto Mode Station-1"}
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 20.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+  - Name: LED1
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 68.0
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Main_motor_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
+    - Name: Appearance
+      Type: BaseVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: ""
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Main_motor_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+  - Name: LED2
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 122.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Conveyor_motor_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Conveyor_motor_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
+  - Name: LED3
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 175.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_1_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_1_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+  - Name: LED4
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 232.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_2_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_2_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+  - Name: LED5
+    Type: Led
+    Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: false
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 288.0
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Vacuum_Pump_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Vacuum_Pump_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+  - Name: Spinning_motor_manual_s1
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_1"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 585.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 175.0
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "InputBoxStyle1"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: Spinning_motor_2_manual_s1
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_2"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 584.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 232.0
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "InputBoxStyle1"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: Main_motor_manual_s1
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Main_Motor"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 585.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 68.0
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "InputBoxStyle1"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: ReadOnly
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+      Value: false
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: Conveyor_motor_manual_s1
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Conveyor_Motor"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 585.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 122.0
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "InputBoxStyle1"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: Main Motor (Vial_Min)
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Main Motor (Vial/Min)"}
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 68.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 220.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: Conveyor Motor (Hz)
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Conveyor Motor (Hz)"}
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 122.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 219.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: 'Spinning Motor-1 (Hz)'
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Spinning Motor-1 (Hz)"}
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 175.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 219.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: 'Spinning Motor-2 (Hz)'
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Spinning Motor-2 (Hz)"}
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 232.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 219.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: Vacuum Pump
+    Type: Label
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"LocaleId":"en-US","Text":"Vacuum Pump"}
+    - Name: TextVerticalAlignment
+      Type: BaseVariableType
+      DataType: TextVerticalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: FontSize
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 15.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 288.0
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 219.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+  - Name: Spinning_motor_2_manual_s2
+    Type: TextBox
+    Children:
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Vacuum_Pump"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 584.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 288.0
+    - Name: Style
+      Type: BaseDataVariableType
+      DataType: String
+      ModellingRule: Optional
+      Value: "InputBoxStyle1"
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: TextHorizontalAlignment
+      Type: BaseVariableType
+      DataType: TextHorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 1
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 130.0
 - Name: Auto_mode_s2_1
-  Id: g=ca5846d6bacc1ae531e0e3dc00edf149
+  Id: g=9b0ebfafbf1892c74d57ff867776a2c9
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -1518,6 +2832,17 @@ Children:
       DataType: Boolean
       AccessLevel: Read
       Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Start_button"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -1563,6 +2888,16 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
+    - Name: MinHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:0.5000000"
+    - Name: MaxHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:1.0000000"
   - Name: Stop_button
     Type: MomentaryButton
     Children:
@@ -1571,6 +2906,17 @@ Children:
       DataType: Boolean
       AccessLevel: Read
       Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Stop_button"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
@@ -1616,6 +2962,16 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
+    - Name: MinHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:0.5000000"
+    - Name: MaxHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:1.0000000"
   - Name: LED6
     Type: Led
     Children:
@@ -1653,6 +3009,71 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Start_Stop_Indication"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Start_Stop_Indication"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 0
   - Name: Total_count_lab
     Type: Label
     Children:
@@ -1887,7 +3308,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Total_Count"
+        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Total_Count"
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -1959,7 +3380,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Total_Count"
+        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Vial_Minute"
     - Name: FontSize
       Type: BaseDataVariableType
       DataType: Size
@@ -2020,1167 +3441,8 @@ Children:
       DataType: Font
       ModellingRule: Optional
       Value: ""
-- Name: Auto_mode_s1_2
-  Id: g=7294d6cf18e8d13ddd3fbe1a55c3841a
-  Supertype: Panel
-  ReferenceType: HasComponent
-  Children:
-  - Name: Width
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 800.0
-  - Name: Height
-    Type: BaseVariableType
-    DataType: Size
-    ModellingRule: Optional
-    Value: 400.0
-  - Name: HorizontalAlignment
-    Type: BaseVariableType
-    DataType: HorizontalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: VerticalAlignment
-    Type: BaseVariableType
-    DataType: VerticalAlignment
-    ModellingRule: Optional
-    Value: 3
-  - Name: Rectangle1
-    Type: Rectangle
-    Children:
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 800.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 400.0
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: VerticalAlignment
-      Type: BaseVariableType
-      DataType: VerticalAlignment
-      ModellingRule: Optional
-      Value: 3
-    - Name: FillColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#100782"
-  - Name: Rectangle2
-    Type: Rectangle
-    Children:
-    - Name: BorderThickness
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 1.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 10.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 250.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 39.0
-    - Name: FillColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#00000000"
-    - Name: BorderColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-  - Name: Manual_Mode_S1
-    Type: Label
-    Children:
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 16.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 239.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      ModellingRule: Optional
-      Value: {"LocaleId":"en-US","Text":"Auto Mode Station-1"}
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 20.0
-    - Name: TextColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-  - Name: LED1
-    Type: Led
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 68.0
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Main_motor_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"ON"}
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"OFF"}
-    - Name: Appearance
-      Type: BaseVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: ""
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: Color
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Main_motor_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#0df612"
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#fc4848"
-  - Name: LED2
-    Type: Led
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 122.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: Color
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Conveyor_motor_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#0df612"
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#fc4848"
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Conveyor_motor_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"ON"}
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"OFF"}
-  - Name: LED3
-    Type: Led
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 175.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_1_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"ON"}
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"OFF"}
-    - Name: Color
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_1_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#0df612"
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#fc4848"
-  - Name: LED4
-    Type: Led
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 232.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_2_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"ON"}
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"OFF"}
-    - Name: Color
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_2_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#0df612"
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#fc4848"
-  - Name: LED5
-    Type: Led
-    Children:
-    - Name: Active
-      Type: BaseDataVariableType
-      DataType: Boolean
-      Value: false
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 288.0
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 2
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 0.0
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Vacuum_Pump_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"ON"}
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: LocalizedText
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"OFF"}
-    - Name: Color
-      Type: BaseDataVariableType
-      DataType: Color
-      Value: "#ff0000"
-      Children:
-      - Name: ConditionalConverter1
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Vacuum_Pump_status"
-        - Name: TrueValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#0df612"
-        - Name: FalseValue
-          Type: BaseDataVariableType
-          DataType: Color
-          ReferenceType: HasParameter
-          ModellingRule: Optional
-          Value: "#fc4848"
-  - Name: Spinning_motor_manual_s1
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_1"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 585.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 175.0
-    - Name: Style
-      Type: BaseDataVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: "InputBoxStyle1"
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 32.0
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-  - Name: Spinning_motor_2_manual_s1
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Spinning_Motor_2"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 584.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 232.0
-    - Name: Style
-      Type: BaseDataVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: "InputBoxStyle1"
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 32.0
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-  - Name: Main_motor_manual_s1
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Main Motor (Vial&/Min)"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 585.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 68.0
-    - Name: Style
-      Type: BaseDataVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: "InputBoxStyle1"
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 32.0
-    - Name: ReadOnly
-      Type: BaseDataVariableType
-      DataType: Boolean
-      ModellingRule: Optional
-      Value: false
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-  - Name: Conveyor_motor_manual_s1
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Conveyor_Motor"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 585.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 122.0
-    - Name: Style
-      Type: BaseDataVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: "InputBoxStyle1"
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 32.0
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-  - Name: Main Motor (Vial_Min)
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"Main Motor (Vial/Min)"}
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 15.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 68.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 220.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: TextVerticalAlignment
-      Type: BaseVariableType
-      DataType: TextVerticalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 0
-    - Name: TextColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-  - Name: Conveyor Motor (Hz)
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"Conveyor Motor (Hz)"}
-    - Name: TextVerticalAlignment
-      Type: BaseVariableType
-      DataType: TextVerticalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 15.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 122.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 219.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: TextColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-  - Name: 'Spinning Motor-1 (Hz)'
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"Spinning Motor-1 (Hz)"}
-    - Name: TextVerticalAlignment
-      Type: BaseVariableType
-      DataType: TextVerticalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 15.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 175.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 219.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: TextColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-  - Name: 'Spinning Motor-2 (Hz)'
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"Spinning Motor-2 (Hz)"}
-    - Name: TextVerticalAlignment
-      Type: BaseVariableType
-      DataType: TextVerticalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 15.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 232.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 219.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: TextColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-  - Name: Vacuum Pump
-    Type: Label
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"Vacuum Pump"}
-    - Name: TextVerticalAlignment
-      Type: BaseVariableType
-      DataType: TextVerticalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: FontSize
-      Type: BaseDataVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 15.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 288.0
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 219.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: TextColor
-      Type: BaseDataVariableType
-      DataType: Color
-      ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-  - Name: Spinning_motor_2_manual_s2
-    Type: TextBox
-    Children:
-    - Name: Text
-      Type: BaseDataVariableType
-      DataType: LocalizedText
-      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-      Children:
-      - Name: DynamicLink
-        Type: DynamicLink
-        DataType: NodePath
-        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Vacuum_Pump"
-        Children:
-        - Name: Mode
-          Type: BaseVariableType
-          DataType: DynamicLinkMode
-          ModellingRule: Optional
-          Value: 2
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 584.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 288.0
-    - Name: Style
-      Type: BaseDataVariableType
-      DataType: String
-      ModellingRule: Optional
-      Value: "InputBoxStyle1"
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 32.0
-    - Name: TextHorizontalAlignment
-      Type: BaseVariableType
-      DataType: TextHorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: HorizontalAlignment
-      Type: BaseVariableType
-      DataType: HorizontalAlignment
-      ModellingRule: Optional
-      Value: 1
-    - Name: RightMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 130.0
 - Name: Auto_mode_s2_2
-  Id: g=f67637d45e197d965dc77be32c866a27
+  Id: g=728ec6af0276e0f564179e35e69e1800
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -3368,8 +3630,33 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      ModellingRule: Optional
       Value: {"LocaleId":"en-US","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Main_motor_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
     - Name: Appearance
       Type: BaseVariableType
       DataType: String
@@ -3385,6 +3672,36 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Main_motor_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
   - Name: LED2
     Type: Led
     Children:
@@ -3422,6 +3739,66 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Conveyor_motor_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Conveyor_motor_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
   - Name: LED3
     Type: Led
     Children:
@@ -3459,6 +3836,66 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Spinning_Motor_1_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Spinning_Motor_1_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
   - Name: LED4
     Type: Led
     Children:
@@ -3496,6 +3933,66 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Spinning_Motor_2_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Spinning_Motor_2_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
   - Name: LED5
     Type: Led
     Children:
@@ -3533,6 +4030,66 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 0.0
+    - Name: Color
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ff0000"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Vacuum_Pump_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+    - Name: Text
+      Type: BaseDataVariableType
+      DataType: LocalizedText
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Vacuum_Pump_status"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"ON"}
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"en-US","Text":"OFF"}
   - Name: Spinning_motor_manual_s1
     Type: TextBox
     Children:
@@ -3540,6 +4097,37 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Spinning_Motor_1"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -3586,7 +4174,38 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":""}
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Spinning_Motor_2"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -3634,6 +4253,37 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Main_Motor"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -3686,6 +4336,37 @@ Children:
       Type: BaseDataVariableType
       DataType: LocalizedText
       Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Conveyor_Motor"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -3947,7 +4628,38 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":""}
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: {"LocaleId":"","Text":"{0:n2}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Vacuum_Pump"
+            Children:
+            - Name: Mode
+              Type: BaseVariableType
+              DataType: DynamicLinkMode
+              ModellingRule: Optional
+              Value: 2
+        - Name: Mode
+          Type: PropertyType
+          DataType: DynamicLinkMode
+          ReferenceType: HasComponent
+          ModellingRule: Optional
+          Value: 2
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -3989,7 +4701,7 @@ Children:
       ModellingRule: Optional
       Value: 130.0
 - Name: Rejction_System_s1
-  Id: g=0e970816c987de984649726e7513ab28
+  Id: g=7a95d518700c73140f5eda2572ce693d
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -4091,7 +4803,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_1"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4227,7 +4939,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_2"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4363,7 +5075,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_3"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4499,7 +5211,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_4"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4635,7 +5347,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_5"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4705,7 +5417,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: -9.0
+        Value: 0.0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
@@ -4766,7 +5478,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_6"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -4902,7 +5614,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_7"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5048,7 +5760,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_8"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5184,7 +5896,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_9"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5320,7 +6032,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_10"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5456,7 +6168,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_11"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5602,7 +6314,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_12"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5748,7 +6460,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_13"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -5884,7 +6596,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_14"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6020,7 +6732,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_15"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6156,7 +6868,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_16"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6292,7 +7004,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_17"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6337,7 +7049,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 7.0
+        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -6438,7 +7150,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_18"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6574,7 +7286,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_19"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6710,7 +7422,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_20"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6846,7 +7558,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_21"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -6982,7 +7694,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_22"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7118,7 +7830,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_23"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7254,7 +7966,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_24"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7390,7 +8102,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_25"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7526,7 +8238,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_26"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7662,7 +8374,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_27"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7798,7 +8510,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_28"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -7934,7 +8646,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_29"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8070,7 +8782,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_30"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8206,7 +8918,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_31"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8342,7 +9054,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_32"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8478,7 +9190,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_33"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8614,7 +9326,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_34"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8750,7 +9462,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_35"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -8886,7 +9598,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_36"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9022,7 +9734,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_37"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9158,7 +9870,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_38"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9203,7 +9915,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 7.0
+        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -9304,7 +10016,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_39"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9440,7 +10152,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_40"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9586,7 +10298,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_41"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9727,7 +10439,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_42"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9863,7 +10575,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_43"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -9999,7 +10711,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_44"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10135,7 +10847,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_45"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10271,7 +10983,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_46"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10407,7 +11119,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_47"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10543,7 +11255,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_48"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10679,7 +11391,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_49"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10724,7 +11436,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: -9.0
+        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -10825,7 +11537,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_50"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -10961,7 +11673,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_51"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -11097,7 +11809,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_52"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -11142,7 +11854,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 7.0
+        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -11243,7 +11955,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_53"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -11379,7 +12091,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_54"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -11515,7 +12227,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_55"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -11651,7 +12363,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_56"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -11787,7 +12499,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_57"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -11923,7 +12635,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_58"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -12178,6 +12890,32 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#877f7f"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_valve_1"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -12218,7 +12956,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_valve_1"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -12313,6 +13051,32 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#877f7f"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_valve_2"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -12353,7 +13117,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_valve_2"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -12448,6 +13212,32 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#877f7f"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_valve_3"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -12488,7 +13278,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_valve_3"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -12583,6 +13373,32 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#877f7f"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_valve_4"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -12623,7 +13439,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Rj_valve_4"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -12686,7 +13502,7 @@ Children:
         DataType: Color
         ModellingRule: Optional
         Value: "#ffffff"
-  - Name: Button1
+  - Name: Reset_button
     Type: Button
     Children:
     - Name: Text
@@ -12707,8 +13523,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#09b90c"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Reset_button"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0a5101"
     - Name: FontWeight
       Type: BaseDataVariableType
       DataType: FontWeightEnum
@@ -12724,6 +13565,86 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 150.0
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Reset_button"
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
   - Name: Rectangle64
     Type: Rectangle
     Children:
@@ -12826,7 +13747,7 @@ Children:
       ModellingRule: Optional
       Value: 30.0
 - Name: Rejction_System_s2
-  Id: g=b4139ed50b45393495eb2a6aa341ca0d
+  Id: g=c0bdcb3d82b8f97a22f517c93de14efd
   Supertype: Panel
   ReferenceType: HasComponent
   Children:
@@ -12928,7 +13849,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_1"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -13064,7 +13985,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_2"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -13200,7 +14121,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_3"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -13336,7 +14257,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_4"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -13472,7 +14393,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_5"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -13542,7 +14463,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: -9.0
+        Value: 0.0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
@@ -13603,7 +14524,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_6"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -13739,7 +14660,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_7"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -13885,7 +14806,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_8"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -14021,7 +14942,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_9"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -14157,7 +15078,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_10"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -14293,7 +15214,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_11"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -14439,7 +15360,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_12"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -14585,7 +15506,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_13"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -14721,7 +15642,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_14"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -14857,7 +15778,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_15"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -14993,7 +15914,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_16"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -15129,7 +16050,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_17"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -15174,7 +16095,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 7.0
+        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -15275,7 +16196,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_18"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -15411,7 +16332,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_19"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -15547,7 +16468,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_20"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -15683,7 +16604,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_21"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -15819,7 +16740,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_22"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -15955,7 +16876,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_23"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -16091,7 +17012,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_24"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -16227,7 +17148,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_25"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -16363,7 +17284,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_26"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -16499,7 +17420,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_27"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -16635,7 +17556,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_28"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -16771,7 +17692,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_29"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -16907,7 +17828,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_30"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -17043,7 +17964,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_31"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -17179,7 +18100,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_32"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -17315,7 +18236,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_33"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -17451,7 +18372,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_34"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -17587,7 +18508,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_35"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -17723,7 +18644,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_36"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -17859,7 +18780,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_37"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -17995,7 +18916,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_38"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -18040,7 +18961,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 7.0
+        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -18141,7 +19062,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_39"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -18277,7 +19198,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_40"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -18322,7 +19243,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 4.0
+        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -18423,7 +19344,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_41"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -18564,7 +19485,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_42"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -18700,7 +19621,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_43"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -18836,7 +19757,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_44"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -18972,7 +19893,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_45"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -19108,7 +20029,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_46"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -19244,7 +20165,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_47"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -19380,7 +20301,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_48"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -19516,7 +20437,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_49"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -19561,7 +20482,7 @@ Children:
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: -9.0
+        Value: 0.0
       - Name: TopMargin
         Type: BaseVariableType
         DataType: Size
@@ -19662,7 +20583,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_50"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -19798,7 +20719,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_51"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -19934,7 +20855,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_52"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -20080,7 +21001,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_53"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -20216,7 +21137,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_54"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -20352,7 +21273,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_55"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -20488,7 +21409,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_56"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -20624,7 +21545,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_57"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -20760,7 +21681,7 @@ Children:
           - Name: DynamicLink
             Type: DynamicLink
             DataType: NodePath
-            Value: ""
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_58"
         - Name: TrueValue
           Type: BaseDataVariableType
           DataType: Color
@@ -20995,6 +21916,32 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#877f7f"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_valve_1"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -21035,7 +21982,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_valve_1"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -21130,6 +22077,32 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#877f7f"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_valve_2"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -21170,7 +22143,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_valve_2"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -21265,6 +22238,32 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#877f7f"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_valve_3"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -21305,7 +22304,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_valve_3"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -21400,6 +22399,32 @@ Children:
       Type: BaseDataVariableType
       DataType: Color
       Value: "#877f7f"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_valve_4"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
     - Name: BorderColor
       Type: BaseDataVariableType
       DataType: Color
@@ -21440,7 +22465,7 @@ Children:
             - Name: DynamicLink
               Type: DynamicLink
               DataType: NodePath
-              Value: ""
+              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Rj_valve_4"
           - Name: TrueValue
             Type: BaseDataVariableType
             DataType: LocalizedText
@@ -21503,7 +22528,7 @@ Children:
         DataType: Color
         ModellingRule: Optional
         Value: "#ffffff"
-  - Name: Button1
+  - Name: Reset_button
     Type: Button
     Children:
     - Name: Text
@@ -21524,8 +22549,33 @@ Children:
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      ModellingRule: Optional
       Value: "#09b90c"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Reset_button"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0a5101"
     - Name: FontWeight
       Type: BaseDataVariableType
       DataType: FontWeightEnum
@@ -21541,6 +22591,86 @@ Children:
       DataType: Size
       ModellingRule: Optional
       Value: 150.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#ffffff"
+    - Name: MouseClickEventHandler1
+      Type: EventHandler
+      Children:
+      - Name: ListenEventType
+        Type: PropertyType
+        DataType: NodeId
+        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+      - Name: MethodsToCall
+        Type: BaseObjectType
+        Children:
+        - Name: MethodContainer1
+          Type: BaseObjectType
+          Children:
+          - Name: ns=3;ObjectPointer
+            Type: NodePointer
+            DataType: NodeId
+            Value: "/Objects/Commands/VariableCommands"
+            Children:
+            - Name: Kind
+              Type: PropertyType
+              DataType: NodeId
+              Value: "/Types/ObjectTypes/BaseObjectType"
+          - Name: ns=3;Method
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "Toggle"
+          - Name: InputArguments
+            Type: BaseObjectType
+            Children:
+            - Name: VariableToModify
+              Type: BaseDataVariableType
+              DataType: VariablePointer
+              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+            - Name: ArrayIndex
+              Type: BaseDataVariableType
+              DataType: UInt32
+              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+              ValueRank: ScalarOrOneDimension
+              Value: 0
+      - Name: EventArguments
+        Type: MouseClickEvent
+        Children:
+        - Name: EventId
+          Type: PropertyType
+          DataType: ByteString
+          Value: ""
+        - Name: EventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceNode
+          Type: PropertyType
+          DataType: NodeId
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: SourceName
+          Type: PropertyType
+          DataType: String
+          Value: ""
+        - Name: Time
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: ReceiveTime
+          Type: PropertyType
+          DataType: UtcTime
+          Value: "1601-01-01T00:00:00.0000000"
+        - Name: Message
+          Type: PropertyType
+          DataType: LocalizedText
+          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        - Name: Severity
+          Type: PropertyType
+          DataType: UInt16
+          Value: 0
   - Name: Rectangle64
     Type: Rectangle
     Children:

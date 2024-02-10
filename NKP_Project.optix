@@ -74,15 +74,15 @@ Project:
    Module: FTOptix.NetLogic
    Version: 1.0
  Statistics:
-  TotalNodeCount: 18978
-  Objects: 2719
+  TotalNodeCount: 19366
+  Objects: 2766
   ObjectTypes: 96
-  Variables: 16153
+  Variables: 16494
   VariableTypes: 0
   DataTypes: 0
   Methods: 10
   References: 43
   ReferenceTypes: 0
-  Files: 65
+  Files: 68
  Nodes:
  - File: Nodes/NKP_Project.yaml
