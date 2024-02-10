@@ -73,16 +73,64 @@ Project:
    Uri: 'urn:FTOptix:NetLogic'
    Module: FTOptix.NetLogic
    Version: 1.0
+  19:
+   Uri: 'urn:FTOptix:Alarm'
+   Module: FTOptix.Alarm
+   Version: 2.0
+  20:
+   Uri: 'urn:FTOptix:Alarm:Net'
+   Module: FTOptix.Alarm.Net
+   Version: 1.0
+  21:
+   Uri: 'urn:FTOptix:Recipe'
+   Module: FTOptix.Recipe
+   Version: 1.0
+  22:
+   Uri: 'urn:FTOptix:Recipe:Net'
+   Module: FTOptix.Recipe.Net
+   Version: 1.0
+  23:
+   Uri: 'urn:FTOptix:Store'
+   Module: FTOptix.Store
+   Version: 1.0
+  24:
+   Uri: 'urn:FTOptix:Store:Net'
+   Module: FTOptix.Store.Net
+   Version: 1.0
+  25:
+   Uri: 'urn:FTOptix:Report'
+   Module: FTOptix.Report
+   Version: 3.0
+  26:
+   Uri: 'urn:FTOptix:Report:Net'
+   Module: FTOptix.Report.Net
+   Version: 2.0
+  27:
+   Uri: 'urn:FTOptix:AuditSigning'
+   Module: FTOptix.AuditSigning
+   Version: 1.1
+  28:
+   Uri: 'urn:FTOptix:AuditSigning:Net'
+   Module: FTOptix.AuditSigning.Net
+   Version: 1.1
+  29:
+   Uri: 'urn:FTOptix:EventLogger'
+   Module: FTOptix.EventLogger
+   Version: 2.0
+  30:
+   Uri: 'urn:FTOptix:EventLogger:Net'
+   Module: FTOptix.EventLogger.Net
+   Version: 1.0
  Statistics:
-  TotalNodeCount: 19366
-  Objects: 2766
-  ObjectTypes: 96
-  Variables: 16494
+  TotalNodeCount: 34018
+  Objects: 5086
+  ObjectTypes: 164
+  Variables: 28719
   VariableTypes: 0
   DataTypes: 0
-  Methods: 10
-  References: 43
+  Methods: 49
+  References: 133
   ReferenceTypes: 0
-  Files: 68
+  Files: 82
  Nodes:
  - File: Nodes/NKP_Project.yaml

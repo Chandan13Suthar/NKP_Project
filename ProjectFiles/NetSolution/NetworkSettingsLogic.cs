@@ -6,6 +6,12 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using System.Linq;
 using FTOptix.SerialPort;
+using FTOptix.Alarm;
+using FTOptix.Recipe;
+using FTOptix.Report;
+using FTOptix.Store;
+using FTOptix.AuditSigning;
+using FTOptix.EventLogger;
 #endregion
 
 public class NetworkSettingsLogic : BaseNetLogic

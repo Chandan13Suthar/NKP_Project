@@ -992,6 +992,36 @@ Children:
       DataType: Duration
       ModellingRule: Optional
       Value: "0:00:00:1.0000000"
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#e4e4e4"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Start_button"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0a5101"
   - Name: Stop_button
     Type: MomentaryButton
     Children:
@@ -1066,6 +1096,36 @@ Children:
       DataType: Duration
       ModellingRule: Optional
       Value: "0:00:00:1.0000000"
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#e4e4e4"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Stop_button"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
   - Name: LED6
     Type: Led
     Children:
@@ -2898,6 +2958,36 @@ Children:
       DataType: Duration
       ModellingRule: Optional
       Value: "0:00:00:1.0000000"
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#e4e4e4"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Start_button"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0df612"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#0a5101"
   - Name: Stop_button
     Type: MomentaryButton
     Children:
@@ -2972,6 +3062,36 @@ Children:
       DataType: Duration
       ModellingRule: Optional
       Value: "0:00:00:1.0000000"
+    - Name: BackgroundColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#e4e4e4"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Value: false
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Stop_button"
+        - Name: TrueValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#fc4848"
+        - Name: FalseValue
+          Type: BaseDataVariableType
+          DataType: Color
+          ReferenceType: HasParameter
+          ModellingRule: Optional
+          Value: "#eb001b"
   - Name: LED6
     Type: Led
     Children:
@@ -13503,27 +13623,48 @@ Children:
         ModellingRule: Optional
         Value: "#ffffff"
   - Name: Reset_button
-    Type: Button
+    Type: MomentaryButton
     Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Reset_button"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
       Value: {"LocaleId":"en-US","Text":"Reset"}
-    - Name: LeftMargin
-      Type: BaseVariableType
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
+    - Name: FontSize
+      Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 630.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
+      Value: 20.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
       ModellingRule: Optional
-      Value: 355.0
+      Value: "#ffffff"
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      Value: "#09b90c"
+      Value: "#e4e4e4"
       Children:
       - Name: ConditionalConverter1
         Type: ConditionalConverter
@@ -13543,108 +13684,38 @@ Children:
           DataType: Color
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: "#0df612"
+          Value: "#1aeb00"
         - Name: FalseValue
           Type: BaseDataVariableType
           DataType: Color
           ReferenceType: HasParameter
           ModellingRule: Optional
           Value: "#0a5101"
-    - Name: FontWeight
-      Type: BaseDataVariableType
-      DataType: FontWeightEnum
-      ModellingRule: Optional
-      Value: 700
-    - Name: FontSize
-      Type: BaseDataVariableType
+    - Name: LeftMargin
+      Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 20.0
+      Value: 630.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 355.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 150.0
-    - Name: MouseClickEventHandler1
-      Type: EventHandler
-      Children:
-      - Name: ListenEventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-      - Name: MethodsToCall
-        Type: BaseObjectType
-        Children:
-        - Name: MethodContainer1
-          Type: BaseObjectType
-          Children:
-          - Name: ns=3;ObjectPointer
-            Type: NodePointer
-            DataType: NodeId
-            Value: "/Objects/Commands/VariableCommands"
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType"
-          - Name: ns=3;Method
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "Toggle"
-          - Name: InputArguments
-            Type: BaseObjectType
-            Children:
-            - Name: VariableToModify
-              Type: BaseDataVariableType
-              DataType: VariablePointer
-              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
-              Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_1/Rejection_steps/Reset_button"
-            - Name: ArrayIndex
-              Type: BaseDataVariableType
-              DataType: UInt32
-              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
-              ValueRank: ScalarOrOneDimension
-              Value: 0
-      - Name: EventArguments
-        Type: MouseClickEvent
-        Children:
-        - Name: EventId
-          Type: PropertyType
-          DataType: ByteString
-          Value: ""
-        - Name: EventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: SourceNode
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: SourceName
-          Type: PropertyType
-          DataType: String
-          Value: ""
-        - Name: Time
-          Type: PropertyType
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: ReceiveTime
-          Type: PropertyType
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Message
-          Type: PropertyType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Severity
-          Type: PropertyType
-          DataType: UInt16
-          Value: 0
-    - Name: TextColor
+    - Name: MinHoldTime
       Type: BaseDataVariableType
-      DataType: Color
+      DataType: Duration
       ModellingRule: Optional
-      Value: "#ffffff"
+      Value: "0:00:00:0.5000000"
+    - Name: MaxHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:1.0000000"
   - Name: Rectangle64
     Type: Rectangle
     Children:
@@ -22529,27 +22600,48 @@ Children:
         ModellingRule: Optional
         Value: "#ffffff"
   - Name: Reset_button
-    Type: Button
+    Type: MomentaryButton
     Children:
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      AccessLevel: Read
+      Value: false
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_Project/Model/Auto_Mode/Station_2/Rejection_steps/Reset_button"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 1
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
       ModellingRule: Optional
       Value: {"LocaleId":"en-US","Text":"Reset"}
-    - Name: LeftMargin
-      Type: BaseVariableType
+    - Name: FontWeight
+      Type: BaseDataVariableType
+      DataType: FontWeightEnum
+      ModellingRule: Optional
+      Value: 700
+    - Name: FontSize
+      Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 630.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
+      Value: 20.0
+    - Name: TextColor
+      Type: BaseDataVariableType
+      DataType: Color
       ModellingRule: Optional
-      Value: 351.0
+      Value: "#ffffff"
     - Name: BackgroundColor
       Type: BaseDataVariableType
       DataType: Color
-      Value: "#09b90c"
+      Value: "#e4e4e4"
       Children:
       - Name: ConditionalConverter1
         Type: ConditionalConverter
@@ -22576,101 +22668,31 @@ Children:
           ReferenceType: HasParameter
           ModellingRule: Optional
           Value: "#0a5101"
-    - Name: FontWeight
-      Type: BaseDataVariableType
-      DataType: FontWeightEnum
-      ModellingRule: Optional
-      Value: 700
-    - Name: FontSize
-      Type: BaseDataVariableType
+    - Name: LeftMargin
+      Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 20.0
+      Value: 630.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 351.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 150.0
-    - Name: TextColor
+    - Name: MinHoldTime
       Type: BaseDataVariableType
-      DataType: Color
+      DataType: Duration
       ModellingRule: Optional
-      Value: "#ffffff"
-    - Name: MouseClickEventHandler1
-      Type: EventHandler
-      Children:
-      - Name: ListenEventType
-        Type: PropertyType
-        DataType: NodeId
-        Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
-      - Name: MethodsToCall
-        Type: BaseObjectType
-        Children:
-        - Name: MethodContainer1
-          Type: BaseObjectType
-          Children:
-          - Name: ns=3;ObjectPointer
-            Type: NodePointer
-            DataType: NodeId
-            Value: "/Objects/Commands/VariableCommands"
-            Children:
-            - Name: Kind
-              Type: PropertyType
-              DataType: NodeId
-              Value: "/Types/ObjectTypes/BaseObjectType"
-          - Name: ns=3;Method
-            Type: BaseDataVariableType
-            DataType: String
-            Value: "Toggle"
-          - Name: InputArguments
-            Type: BaseObjectType
-            Children:
-            - Name: VariableToModify
-              Type: BaseDataVariableType
-              DataType: VariablePointer
-              Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
-              Value: {"IdType":0,"Id":0,"Namespace":-1}
-            - Name: ArrayIndex
-              Type: BaseDataVariableType
-              DataType: UInt32
-              Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
-              ValueRank: ScalarOrOneDimension
-              Value: 0
-      - Name: EventArguments
-        Type: MouseClickEvent
-        Children:
-        - Name: EventId
-          Type: PropertyType
-          DataType: ByteString
-          Value: ""
-        - Name: EventType
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: SourceNode
-          Type: PropertyType
-          DataType: NodeId
-          Value: {"IdType":0,"Id":0,"Namespace":-1}
-        - Name: SourceName
-          Type: PropertyType
-          DataType: String
-          Value: ""
-        - Name: Time
-          Type: PropertyType
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: ReceiveTime
-          Type: PropertyType
-          DataType: UtcTime
-          Value: "1601-01-01T00:00:00.0000000"
-        - Name: Message
-          Type: PropertyType
-          DataType: LocalizedText
-          Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
-        - Name: Severity
-          Type: PropertyType
-          DataType: UInt16
-          Value: 0
+      Value: "0:00:00:0.5000000"
+    - Name: MaxHoldTime
+      Type: BaseDataVariableType
+      DataType: Duration
+      ModellingRule: Optional
+      Value: "0:00:00:1.0000000"
   - Name: Rectangle64
     Type: Rectangle
     Children:

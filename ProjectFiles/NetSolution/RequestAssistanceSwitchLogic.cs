@@ -3,6 +3,12 @@ using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.System;
+using FTOptix.Alarm;
+using FTOptix.Recipe;
+using FTOptix.Report;
+using FTOptix.Store;
+using FTOptix.AuditSigning;
+using FTOptix.EventLogger;
 #endregion
 
 public class RequestAssistanceSwitchLogic : BaseNetLogic

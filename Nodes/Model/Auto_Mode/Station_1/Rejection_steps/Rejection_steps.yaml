@@ -250,7 +250,6 @@ Children:
   DataType: Boolean
   Value: false
 - Name: Reset_button
-  Id: g=196ebf0f4a86fd7b1bcbf20f76bbab8b
   Type: BaseDataVariableType
   DataType: Boolean
   Value: false

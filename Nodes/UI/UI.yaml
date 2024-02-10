@@ -456,7 +456,7 @@ Children:
   - Name: StartingUser
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/Users/Anonymous"
+    Value: "/Objects/NKP_Project/Security/Users/Pima"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -532,5 +532,105 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
+  - Name: CurrentUser
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: Method1
+  - Name: IdleTimeoutLogic
+    Type: NetLogic
+    WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+    Children:
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+    - Name: Duration
+      Type: BaseDataVariableType
+      DataType: Duration
+      Value: "0:00:05:0.0000000"
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/NKP_Project/Model/Retain_Variable/AutoLogOutTime"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          ModellingRule: Optional
+          Value: 2
+    - Name: OnTimeout
+      Type: MethodInvocation
+      Children:
+      - Class: Reference
+        Target: ns=3;i=98
+        Direction: Forward
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Session}@NodeId"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            Value: 2
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Logout"
+    - Name: LogoutWindow
+      Type: MethodInvocation
+      Children:
+      - Name: ObjectPointer
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{MainArea}@NodeId"
+          Children:
+          - Name: Mode
+            Type: BaseVariableType
+            DataType: DynamicLinkMode
+            Value: 2
+      - Name: Method
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ChangePanel"
+      - Class: Reference
+        Target: ns=3;i=98
+        Direction: Forward
+      - Name: InputArguments
+        Type: BaseObjectType
+        Children:
+        - Name: NewPanel
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+          Value: "/Objects/NKP_Project/UI/Screens/Welcome/Welcome"
+        - Name: AliasNode
+          Type: BaseDataVariableType
+          DataType: NodeId
+          Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+          Value: {"IdType":0,"Id":0,"Namespace":-1}
 - File: Screens/Screens.yaml
 - File: SettingsWidgets/SettingsWidgets.yaml
+- File: UserObjects/UserObjects.yaml
+- File: UserLoginForm/UserLoginForm.yaml
+- File: NewUserEditor/NewUserEditor.yaml

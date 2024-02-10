@@ -303,6 +303,21 @@ Children:
           DataType: Color
           ModellingRule: Optional
           Value: "#ffffff"
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 1
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 60.0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 3
     - Name: Menu
       Type: Button
       Children:
@@ -534,6 +549,11 @@ Children:
             Type: PropertyType
             DataType: UInt16
             Value: 0
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 1
     - Name: Date&Time
       Type: Label
       Children:
@@ -585,12 +605,12 @@ Children:
         Type: BaseVariableType
         DataType: HorizontalAlignment
         ModellingRule: Optional
-        Value: 2
+        Value: 1
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
         ModellingRule: Optional
-        Value: 0.0
+        Value: 70.0
     - Name: Username_tag
       Type: Label
       Children:
@@ -2207,7 +2227,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: NodeId
                 Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/NKP_Project/UI/Screens/Recipe/Recipe_Screen"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -3221,7 +3241,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: NodeId
                 Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/NKP_Project/UI/Screens/Report_Screen/User_Administrator"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId
@@ -3424,7 +3444,7 @@ Children:
                 Type: BaseDataVariableType
                 DataType: NodeId
                 Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
-                Value: {"IdType":0,"Id":0,"Namespace":-1}
+                Value: "/Objects/NKP_Project/UI/Screens/Alarms_History/AlarmPanel"
               - Name: AliasNode
                 Type: BaseDataVariableType
                 DataType: NodeId

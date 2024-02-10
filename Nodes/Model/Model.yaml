@@ -6,3 +6,5 @@ Children:
 - File: Calibration/Calibration.yaml
 - File: I_O_Screen/I_O_Screen.yaml
 - File: DataSetup/DataSetup.yaml
+- File: Retain_Variable/Retain_Variable.yaml
+- File: BatchData/BatchData.yaml

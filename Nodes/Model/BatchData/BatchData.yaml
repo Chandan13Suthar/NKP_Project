@@ -1,0 +1,654 @@
+Name: BatchData
+Id: g=3b3e67496c7f0f4e163c6b0bcde6404c
+Type: FolderType
+Children:
+- Name: BatchRunning
+  Id: g=46f7b10e155782194d0ef289e254df50
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: DynamicLink
+    Id: g=897aa778449aeac8bfe5fd6ede43e228
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_Batch_Running"
+    Children:
+    - Name: Mode
+      Id: g=ae292013be79627fb88baed4ac18f879
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: BatchNumber
+  Id: g=2b0c7c0bd0fa3ae93389aee7015685f2
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: ProductName
+  Id: g=559511dcf90f7f8177cd8f97e5580cf0
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: BatchStartTime
+  Id: g=ff2c762e8a1edcd4dba99a5b9a495fb7
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: BatchStopTime
+  Id: g=392aee670c9a04679bad1bd83bdf3c04
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: TotalCounts
+  Id: g=1afbc12199c07b9d719313c4b0ce4611
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=32411c0b918d223cf19b773357eb3413
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_BatchTotal_Count"
+    Children:
+    - Name: Mode
+      Id: g=ffd0d2ea796420b0c72bd4e9b44a2faa
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: RejectCounts
+  Id: g=69f9f3a6bfa93c649a98b9154d68a932
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=3c096c56622255341fa3dfbbee7f3e25
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_BatchReject_Count"
+    Children:
+    - Name: Mode
+      Id: g=bf089fa793b98d949e412f6ca0918ce4
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: GoodCounts
+  Id: g=c8a074effff5daae211871ea68b45e54
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=ed113dc817be95f8d030e655b4a4032c
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_BatchGood_Count"
+    Children:
+    - Name: Mode
+      Id: g=7fbcbeaf12f9706c3f9c9cd5e376da15
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: MachineMinSpeed
+  Id: g=5a74e8878c54b47e9b4774c15ef5ff67
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=26d961d94142510588dba9dff01aa4ba
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/Batch_Min_Speed"
+    Children:
+    - Name: Mode
+      Id: g=1cfdfa8c2cd33ce2d632f45d6b010547
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: MachineMaxSpeed
+  Id: g=6b60628d65fc1e592a2f16dae581291a
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=9290b51dcb609914cd54d6a71e2a0570
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/Batch_Max_Speed"
+    Children:
+    - Name: Mode
+      Id: g=02278b9c838639d3bdc793f2bea919a1
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: SetSpeed
+  Id: g=ead21e04fe40bbbae2025557967dac7d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Id: g=52f68dc4e4aebfd543f0622439f2d7b9
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_I_MachineSpeed_CMD"
+    Children:
+    - Name: Mode
+      Id: g=64fa0b37e55fe38fcae7273e8720cc7e
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+  - Name: ns=0;EURange
+    Id: g=f7f38fe3ee9331e850d4533b212cdd36
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=51ecdd349e4a49120c2df5db6c5c7717
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 40.0
+    - Name: High
+      Id: g=e54dd6b4c9a9ed010b599b809356d0a0
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+      Children:
+      - Name: DynamicLink
+        Id: g=255ee1440462cdf825c12d9b7763dd80
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Machine_Speed_Model/MachineMaxSpeed_1"
+        Children:
+        - Name: Mode
+          Id: g=1701b5a64182d0a569efe7cea2a54179
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Constrain
+      Id: g=c099e88d17ae0998277172cbe9e8ccac
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+  - Name: AuditSigning Signature
+    Id: g=fdc83f3ca826500a33dd9a109904a116
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=8355a49f6d6e55a62b76c432b5ddfca0
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=c5b631643033264be5afc2c4e8836451
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Id: g=c124ea4bf653b1a13dfd87f0e6e711d7
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 1
+- Name: CS3_Set_Temperature
+  Id: g=e6a77ce886da206639d3037b0bb0d469
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ns=0;EURange
+    Id: g=e5e426e0997b7aea76be1a0d708c1e69
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=ea5c7a5aaf455f9a4059295c8470c6a5
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+    - Name: High
+      Id: g=35f9001cac4df77a5ec99a691493b882
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 300.0
+    - Name: Constrain
+      Id: g=28e3f36f67142bd4f577fb0cea5270a1
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+  - Name: DynamicLink
+    Id: g=5f6b68b5562d114368d49c7c97d8fa7c
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_CS3_Set_Temp"
+    Children:
+    - Name: Mode
+      Id: g=4394a1af62a227a041eeed2cfe48be25
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+  - Name: AuditSigning Signature
+    Id: g=41ed53a22099524aa60b2a39624f1b8c
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=eb81ea8deb151d69a8410020d15384a3
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=dffb338caa7533f045fea4265ef3d5a6
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Id: g=09f28dc9b349aa86ca3145461e39584c
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 1
+- Name: CS1_Set_Temperature
+  Id: g=982ffdb74a41d74b369ba5e7a5c5806a
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=144491c60d8b8c0397baa92214ccff4c
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_CS1_Set_Temp"
+    Children:
+    - Name: Mode
+      Id: g=61ad06794ae0d4a256b5ca136c7a232d
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+  - Name: ns=0;EURange
+    Id: g=c5a1077a4739553fae5781fbcdc4006a
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=9b96ec9d9dbb102ce5ce953ab8d1d025
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+    - Name: High
+      Id: g=1d1aa7a650bd95e53120f2084c6b06bf
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 300.0
+    - Name: Constrain
+      Id: g=cc6ee0a45b69a8bfab94e22cb4511e27
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+  - Name: AuditSigning Signature
+    Id: g=d65354d995cddc065ad79535fd034ea3
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=209aa8cb7e08c809b98cb88a5ea2ccfe
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=3f55355e22ca15276bf9a7fc78017118
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Id: g=f9b6f1dfdb0ee30d5446c938cb5ee29d
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 1
+- Name: CS2_Set_Temperature
+  Id: g=a6d6e2a21fe58b96c0fe1279dca05a19
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=e41d1f0d6ef6369490dcbe6373a3c47c
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_CS2_Set_Temp"
+    Children:
+    - Name: Mode
+      Id: g=527a1a00c66a69279a18377983339db0
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+  - Name: ns=0;EURange
+    Id: g=6e607b7b573cb473588f2c4029e74a3a
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=dbbdc4248d75c02125b3982ae0a12a42
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+    - Name: High
+      Id: g=66d4fd2603af25f3e83e191f3c5cc897
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 300.0
+    - Name: Constrain
+      Id: g=ebf55e66f9c6ebb4ea151bca1e7cb686
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+  - Name: AuditSigning Signature
+    Id: g=b350c031a980ebf1c49752119f0fc7bd
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=f0de9d792f63e6b53bc1f8488d3b609c
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=6c833dfcaf0259edd70cd2a61bd68aa4
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Id: g=167031410827c2164e4bdbb399e82f2e
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 1
+- Name: UJ1_Set_Temperature
+  Id: g=12c64fc7f0032c289a36b8073d34da83
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=eb4b78fad0b7a66e94dc7fb2a69ee94c
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_UJ1_Set_Temp"
+    Children:
+    - Name: Mode
+      Id: g=b90334993e2ac17690dbb5afb678adf0
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+  - Name: ns=0;EURange
+    Id: g=7295fb7c35d6cf1993025002365d083c
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=fdf9717e18676a89aaed0b22b962867b
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+    - Name: High
+      Id: g=f3b0d979767b8a8bcf2a0562695684ca
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 300.0
+    - Name: Constrain
+      Id: g=0d6867072ca21ef230ada162c7aaa44d
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+  - Name: AuditSigning Signature
+    Id: g=d9c1ffc4017106bc6a9a0e74b4d248bf
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=0ba9ed4494df8f4b0f7fd56eb20b18ab
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=ce36f2d650a01f0a8390b022195a69f2
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Id: g=a26d1a9a30d23bb3bc2e03172b60ca29
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 1
+- Name: LJ1_Set_Temperature
+  Id: g=3fc02b5cf1aba374b0f021d9cf92e6aa
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=d0cbaa02ca031866477a8483279d2610
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/HMI_LJ1_Set_Temp"
+    Children:
+    - Name: Mode
+      Id: g=98e10d9e1a170a4b75963ce6d9e69b0e
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+  - Name: ns=0;EURange
+    Id: g=a018ede14c83d0b0186ebf77201fcf4a
+    Type: RangeType
+    DataType: Range
+    Children:
+    - Name: Low
+      Id: g=d769044a39e4c492261d9a3eb604a003
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 10.0
+    - Name: High
+      Id: g=e0eb564e9958ff804290b99f99a8bfc7
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 300.0
+    - Name: Constrain
+      Id: g=da197178a185781fc2e7c0dfe77289ad
+      Type: BaseVariableType
+      DataType: Boolean
+      ReferenceType: HasProperty
+      Value: true
+  - Name: AuditSigning Signature
+    Id: g=e7c731cb186be3b3e98f83bbb534de17
+    Type: AuditInfo
+    ReferenceType: NonHierarchicalOwning
+    Children:
+    - Name: Users
+      Id: g=8cb340088ab9e3ce8e4ae663ea5743e5
+      Type: BaseObjectType
+    - Name: Groups
+      Id: g=53756eb2edeb8a7ee14209bb359c5935
+      Type: BaseObjectType
+    - Name: WorkflowType
+      Id: g=ea25c54af1f028d91581131b2164c0bf
+      Type: PropertyType
+      DataType: WorkflowType
+      Value: 1
+- Name: CS3_Min_Temperature
+  Id: g=0bbc1229cc153c0ca3f49209057657a6
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=b0b3cfb85bc5a362719e0445a653815c
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/CS3_Min_Temp"
+    Children:
+    - Name: Mode
+      Id: g=66a03ae3b736ceb5d50c0e4b9c40a9f4
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: CS1_Min_Temperature
+  Id: g=8dc86d70756a4ccac940323d897d7ab1
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=5a5fc18a62af67f84bec20b51e078f48
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/CS1_Min_Temp"
+    Children:
+    - Name: Mode
+      Id: g=dd68bb6314bf02aef6dbcfec0584a5d0
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: CS2_Min_Temperature
+  Id: g=feb575bee4172d23cb736f43c68d34a6
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=bb05ae0adbe9f58c1cc516171e2373cd
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/CS2_Min_Temp"
+    Children:
+    - Name: Mode
+      Id: g=2b27f38d8ece0ad55cddd752ce610a77
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: UJ1_Min_Temperature
+  Id: g=c9d07f0470495f5fb41f57d3402cb5a6
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=fdf5e7e6760ca2777d3e0fc43d3d3cc1
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/UJ1_Min_Temp"
+    Children:
+    - Name: Mode
+      Id: g=3c9d6b6b380a665d0b1dbada2e84afb3
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: LJ1_Min_Temperature
+  Id: g=67f4ffb1611e757abad3dd03298423c4
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=3953be2c972f5ca2e7bd8c27c5de6d72
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/LJ1_Min_Temp"
+    Children:
+    - Name: Mode
+      Id: g=87e8937937e92a456b255d6b9a336daf
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: CS3_Max_Temperature
+  Id: g=3ec234450d2d083fd7dda69ff8f94c8f
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=41ad6d2cc7499c0da5bb06219d2b16b8
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/CS3_Max_Temp"
+    Children:
+    - Name: Mode
+      Id: g=9a0123481bb942604ee005d934b2aaee
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: CS1_Max_Temperature
+  Id: g=9b97fe3231065d53e59a96123c45acdd
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=36944a899631d29628f07c98b563487a
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/CS1_Max_Temp"
+    Children:
+    - Name: Mode
+      Id: g=14690ee49bde857e1b22a20c90e0ff77
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: CS2_Max_Temperature
+  Id: g=2252e3a2b3f5760c461058f87b94052b
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=a533cd6f5a8c02d73701000806f62f71
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/CS2_Max_Temp"
+    Children:
+    - Name: Mode
+      Id: g=1762fdfa6485532cc1180a457df33763
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: UJ1_Max_Temperature
+  Id: g=7841009b9b99e57aac51f7853ae147ea
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=7ed9d2df082d6c661077ed94060c795c
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/UJ1_Max_Temp"
+    Children:
+    - Name: Mode
+      Id: g=57866d74741ac47326fb418fa93f0d18
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: LJ1_Max_Temperature
+  Id: g=cbbf909d3a770dead3135e2feb8eb172
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Id: g=dc7720f1b6edd2e4de782ec1fb482ce0
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/AB_DRIVER/AB_PLC/Tags/Controller Tags/LJ1_Max_Temp"
+    Children:
+    - Name: Mode
+      Id: g=0ed2cd885e5a5f90971eaf5cc8121956
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- File: ReportData/ReportData.yaml
+- Name: BatchNumberChanged
+  Id: g=f4af47ab9f8a16071e2dc8c53ae4b336
+  Type: VariableChangedEventDispatcher
+  Children:
+  - Name: VariableNodePath
+    Id: g=10c9a05a0bb395422bda0da74aa78f03
+    Type: BaseVariableType
+    DataType: NodePath
+    Value: "../BatchNumber"
